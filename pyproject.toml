@@ -1,0 +1,21 @@
+[project]
+name = "preview-gui"
+version = "0.1.0"
+description = "视频预览GUI工具 - 批量生成视频帧条预览，支持文件夹浏览、翻页、自定义预览参数"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "pyside6>=6.5",
+    "opencv-python>=4.8",
+    "pillow>=10.0",
+]
+
+[project.scripts]
+preview-gui = "main:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
