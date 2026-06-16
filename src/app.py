@@ -100,7 +100,6 @@ class MainWindow(QMainWindow):
         splitter = QSplitter(Qt.Orientation.Horizontal)
 
         self.folder_tree = FolderTree()
-        self.folder_tree.setMaximumWidth(260)
         self.folder_tree.setMinimumWidth(140)
 
         self.video_grid = VideoGrid()
@@ -396,7 +395,8 @@ class MainWindow(QMainWindow):
                 background: #2b2b2b; color: #ddd; border: 1px solid #444;
             }
             QMenu::item:selected { background: #3a5a8c; }
-            QSplitter::handle { background: #333; width: 1px; }
+            QSplitter::handle { background: #555; width: 4px; }
+            QSplitter::handle:hover { background: #6af; }
         """
         self.setStyleSheet(dark)
 

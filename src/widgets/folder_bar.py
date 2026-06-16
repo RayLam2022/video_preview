@@ -30,7 +30,6 @@ class FolderBar(QWidget):
 
         self.btn_up = QPushButton("⬆ 上级")
         self.btn_up.setToolTip("返回上级目录")
-        self.btn_up.setFixedWidth(60)
 
         self.btn_browse = QPushButton("📁 浏览...")
         self.btn_browse.setToolTip("选择文件夹")
